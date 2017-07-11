@@ -1,7 +1,5 @@
 package user;
 
-import iohelper.VersionHelper;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Map;
@@ -11,7 +9,7 @@ import static iohelper.IOHelper.SEPARATOR;
 /**
  * Created by liao on 2017/6/3.
  */
-public class User implements Serializable{
+public class User implements Serializable {
 
 
     private String userName;

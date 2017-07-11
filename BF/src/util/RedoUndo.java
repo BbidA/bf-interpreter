@@ -1,12 +1,7 @@
 package util;
 
-import javafx.event.EventHandler;
-import javafx.scene.control.Tab;
 import javafx.scene.control.TextArea;
 
-import java.awt.event.KeyEvent;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
 
 /**

@@ -8,6 +8,7 @@ import java.rmi.RemoteException;
 public class UserServiceImpl implements UserService {
 
     private UserManager userManager = UserManager.getInstance();
+
     @Override
     public boolean login(String username, String password) throws RemoteException {
 

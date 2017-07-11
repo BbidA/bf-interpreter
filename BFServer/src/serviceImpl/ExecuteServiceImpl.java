@@ -1,15 +1,14 @@
 package serviceImpl;
 
-import java.rmi.RemoteException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.function.Supplier;
-
 import language.BrainFuckMode;
 import language.LanguageMode;
 import language.OokMode;
 import service.ExecuteService;
+
+import java.rmi.RemoteException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Supplier;
 
 public class ExecuteServiceImpl implements ExecuteService {
 
