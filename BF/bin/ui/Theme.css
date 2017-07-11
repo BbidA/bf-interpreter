@@ -1,0 +1,52 @@
+.root {
+    -fx-background-color: #3c3f41;
+}
+
+.menu-bar {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #bbbbbb;
+}
+
+.menu {
+    -fx-text-fill: #bbbbbb;
+}
+
+.menu-item {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #bbbbbb;
+}
+
+.tree-view, .tree-cell {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #bbbbbb;
+    -fx-font-family: Consolas;
+}
+
+.tree-cell:expanded {
+    -fx-background-color: #404040;
+}
+
+.tree-cell:selected {
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-text-fill: #bbbbbb;
+}
+
+.text-area {
+    -fx-control-inner-background: #2b2b2b;
+    -fx-font-family: Consolas;
+    -fx-highlight-fill: #e3bb68;
+    -fx-font-size: 20px;
+    -fx-text-fill: #e3bb68;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #3b3d3e transparent #3b3d3e;
+    -fx-background-color: transparent, derive(#3b3d3e, 20%);
+}
+
+.tab-pane {
+    -fx-background-color: #2b2b2b;
+}
