@@ -24,7 +24,6 @@ public class IOServiceImpl implements IOService {
 
     @Override
     public String readFile(String userId, String fileName) {
-        // TODO Auto-generated method stub
 
         return IOHelper.readFile(userId, fileName);
     }
@@ -36,7 +35,6 @@ public class IOServiceImpl implements IOService {
 
     @Override
     public Map<String, ArrayList<String>> readFileMap(String userId) {
-        // TODO Auto-generated method stub
 
         return UserManager.getInstance().getUserOnline(userId).getUserFileMap();
     }
@@ -44,10 +42,5 @@ public class IOServiceImpl implements IOService {
     @Override
     public ArrayList<String> getVersions(String userId, String fileName) throws RemoteException {
         return UserManager.getInstance().getUserOnline(userId).getVersions(fileName);
-    }
-
-    private void versionWrite(String file, String userId, String fileName) {
-        //历史版本
-        VersionHelper.versionWrite(file, fileName, UserManager.getInstance().getUserOnline(userId));
     }
 }
