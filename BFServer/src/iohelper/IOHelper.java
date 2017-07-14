@@ -9,7 +9,7 @@ import java.io.*;
  */
 public class IOHelper {
 
-    static final String DIR_PATH = IOHelper.class.getResource("/userfiles").getFile() + "/";
+    static final String DIR_PATH = VersionHelper.class.getResource("/userfiles").getFile() + "/";
     public static final String SEPARATOR = "_";
 
     public static boolean writeFile(User requester, String file, String fileName) {
@@ -64,5 +64,9 @@ public class IOHelper {
             e.printStackTrace();
         }
         return result.toString();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(DIR_PATH);
     }
 }
