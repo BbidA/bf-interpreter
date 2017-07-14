@@ -16,7 +16,7 @@ import java.util.Optional;
 public class UserManager {
 
     private static Map<String, User> registeredUsers;
-    private static final String FILE_PATH = UserManager.class.getResource("/user_db.ser").getFile();
+    //    private static final String FILE_PATH = UserManager.class.getResource("/user_db.ser").getFile();
     private static final String JSON_FILE_PATH = UserManager.class.getResource("/user_info.json").getFile();
     private static ArrayList<User> onlineUsers = new ArrayList<>();
     private static Gson gson = new Gson();
@@ -41,7 +41,7 @@ public class UserManager {
     private UserManager() {
         Type mapType = new TypeToken<Map<String, User>>() {}.getType();
         try {
-            registeredUsers =gson.fromJson(new FileReader(JSON_FILE_PATH), mapType);
+            registeredUsers = gson.fromJson(new FileReader(JSON_FILE_PATH), mapType);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -106,7 +106,7 @@ public class UserManager {
 
     private void writeBackInfo() {
 
-        try (PrintWriter writer = new PrintWriter(JSON_FILE_PATH)){
+        try (PrintWriter writer = new PrintWriter(JSON_FILE_PATH)) {
             writer.print(gson.toJson(registeredUsers));
 
         } catch (IOException e) {

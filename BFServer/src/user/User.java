@@ -20,7 +20,6 @@ public class User implements Serializable {
         this.userName = userName;
         this.password = password;
         this.userFileMap = userFileMap;
-
     }
 
     boolean checkPassword(String password) {
